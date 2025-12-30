@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard | JobPortal{% endblock %}
+
+{% block content %}
+<div class="dashboard-wrapper">
+
+    <h1 class="dashboard-title">Admin Dashboard</h1>
+
+    <div class="dashboard-cards">
+        <div class="card">
+            <h2>{{ jobs_count }}</h2>
+            <p>Total Jobs</p>
+        </div>
+
+        <div class="card">
+            <h2>{{ users_count }}</h2>
+            <p>Total Users</p>
+        </div>
+
+        <div class="card">
+            <h2>{{ applications_count }}</h2>
+            <p>Total Applications</p>
+        </div>
+    </div>
+
+    <div class="dashboard-actions">
+        <a href="{% url 'add_job' %}" class="btn-action">Add Job</a>
+        <a href="{% url 'job_list' %}" class="btn-action secondary">View Jobs</a>
+    </div>
+
+</div>
+{% endblock %}

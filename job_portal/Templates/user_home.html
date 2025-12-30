@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}User Home{% endblock %}
+
+{% block content %}
+<h2>Welcome, {{ request.user.full_name }}</h2>
+
+<p>You can view and apply for available jobs.</p>
+
+<a href="{% url 'view_job_list' %}">View Jobs</a>
+{% endblock %}

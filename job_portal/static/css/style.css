@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f5f7fb;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1366f2;
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HOME NAVBAR */
+.home-navbar {
+    justify-content: center;
+}
+
+/* LOGO */
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+/* HUGE LOGO ON HOME */
+.home-navbar .logo a {
+    font-size: 42px;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    margin-left: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.nav-links .btn {
+    background: white;
+    color: #1366f2;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* MAIN CONTENT */
+.content {
+    padding: 40px;
+}
+
+/* HOME HERO */
+.hero {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.hero .actions a {
+    padding: 12px 26px;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero .login {
+    background: #1366f2;
+    color: white;
+}
+
+.hero .register {
+    border: 2px solid #1366f2;
+    color: #1366f2;
+}
+/* FULL-PAGE CENTERING */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* full viewport height minus navbar */
+    padding: 20px;
+}
+
+.auth-container {
+    width: 400px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    background: #1366f2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-container button:hover {
+    background: #0f55cc;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-link a {
+    color: #1366f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* DASHBOARD LAYOUT */
+.dashboard-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.dashboard-title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Cards */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 35px 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #1366f2;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Action buttons */
+.dashboard-actions {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-action {
+    padding: 14px 30px;
+    background: #1366f2;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn-action.secondary {
+    background: #0d47a1;
+}
+
+.btn-action:hover {
+    transform: translateY(-3px);
+    background: #0b5ed7;
+}
+
+

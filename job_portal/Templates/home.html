@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | Job Portal{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Browse jobs, apply easily, and track applications.</p>
+
+    <div class="actions">
+        <a href="{% url 'login' %}" class="login">Login</a>
+        <a href="{% url 'register' %}" class="register">Register</a>
+    </div>
+</div>
+{% endblock %}
